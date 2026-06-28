@@ -1,0 +1,14 @@
+# Runtime dependencies for the yield / CO2-fertilization pipeline.
+# Pin to the versions you actually ran with before release (replace >= with ==).
+numpy
+pandas
+scipy
+scikit-learn
+tensorflow        # Keras Sequential models (NN yield models)
+matplotlib
+geopandas         # only for the county maps in 1-Reliable_counties
+
+# NOTE: the full-model script (2-Corn_trend/0_model_clean_corn_per_seed.py) and the
+# soybean notebook still carry legacy imports (xgboost, shap, statsmodels, xarray,
+# cfgrib, folium, plotly, seaborn) that are NOT used by the pipeline. They can be
+# removed; they are intentionally left out of this file.
