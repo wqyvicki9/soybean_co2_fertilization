@@ -5,8 +5,8 @@ the soybean CO₂-fertilization response, isolated by transferring a maize-deriv
 background (agronomy/technology) trend onto soybean so that the soybean CO₂
 coefficient captures the soybean-minus-maize CO₂ effect.
 
-> **Paper:** _<title>_, <authors>, <journal/year>. DOI: <doi>  ← fill in before release
-> **Contact:** <corresponding author / email>
+# > **Paper:** _<title>_, <authors>, <journal/year>. DOI: <doi>  ← fill in before release
+# > **Contact:** <>
 
 ## Overview
 
