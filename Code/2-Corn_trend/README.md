@@ -12,7 +12,7 @@ from maize, to be transferred to soybean.
    fixed reliable county set, 5-yr smoothed, then the **median across 20 seeds**.
 
 **Input ←**
-- `Data/.../Corn_CAMS_1979_2023_allcounties.csv` (script 1)
+- `Data/Corn_CAMS_1979_2023_allcounties.csv` (script 1)
 - corn `nn_time` model from script 1 (`Results/Results_random_seeds_20/`)
 - `1-Reliable_counties/reliable_counties_aggregated.csv` (fixed county set)
 
