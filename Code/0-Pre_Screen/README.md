@@ -8,7 +8,7 @@ can form the *non-climate residual* and screen counties.
   county fixed effects, **no Year, no CO2** (Scenario 1). 20 seeds, linear + NN.
 - `2_model_clean_soy_climate_only.py` — same design for soybean.
 
-**Input ←** `Data/Aggregated_yield_climate_co2/{Corn,Soy}_CAMS_1979_2023_allcounties.csv`
+**Input ←** `Data/{Corn,Soy}_CAMS_1979_2023_allcounties.csv`
 
 **Output →** `Results/Results_{Corn,Soy}_ClimateOnly_20seeds/{crop}_predictions_nn.p`
 (and `_linear.p`). Each is a per-seed list of dicts holding `test_pred`,
