@@ -10,6 +10,7 @@ proxy (`Tech_trend`); the coefficient on CO2 is the ΔCO2-sensitivity.
 - `1-Reliable_counties/reliable_counties_aggregated.csv` (fixed county set)
 
 **Output →** soybean `*_sensitivities*.p` (overall + Early/Mid/Late stage).
+and all other files for analysis
 
 ---
 
