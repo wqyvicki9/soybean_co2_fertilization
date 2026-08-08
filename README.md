@@ -38,7 +38,7 @@ Soybean_co2_fertilization/
 ├── README.md              ← this file
 ├── requirements.txt
 ├── Code/                  ← pipeline (run folders 0 → 3 in order; see Code/README.md)
-│   ├── 0-Pre_Screen/        climate-only (Scenario 1) yield models, corn & soy
+│   ├── 0-Pre_Screen/        climate-only (Scenario 1) yield models, corn & soybean
 │   ├── 1-Reliable_counties/ residual-growth correlation → fixed 705-county set
 │   ├── 2-Corn_trend/        corn full model (Scenario 2) → maize background trend
 │   └── 3-Soybean_CFE/       soybean Scenario 2 → ΔCO₂-sensitivity
@@ -112,7 +112,7 @@ without re-running the heavy upstream model training.
 
 - **Non-climate residual** = `observed USDA yield − climate-only (Scenario 1)
   prediction`, per crop. County retention in step 1 correlates the **annual
-  change** of this residual (5-yr rolling mean) between corn and soy.
+  change** of this residual (5-yr rolling mean) between corn and soybean.
 - **Reliable county set**: a county is kept if it shows a significant (p < 0.01)
   lag-0 correlation in **≥ 16 of 20 seeds** → 705 counties.
 - **Maize trend transfer**: `ΔY = f(year) − f(1979)` from the corn `nn_time`
