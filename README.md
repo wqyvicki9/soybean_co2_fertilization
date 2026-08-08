@@ -60,8 +60,7 @@ Monthly variables are averaged into three **bimonthly stages** inside the code:
 Early (May+Jun), Mid (Jul+Aug), Late (Sep+Oct). Counties with fewer than ~80% of
 years are dropped. Corn: 2,475 counties / 83,802 rows. Soy: 2,212 / 71,112.
 
-> Provenance: yields — USDA NASS; climate — <PRISM/source>; CO₂ — CAMS. Fill in
-> exact sources/versions before release.
+
 
 ## Setup
 
@@ -75,7 +74,7 @@ runs in a few GB of RAM).
 
 ## How to run
 
-Run everything **from this `Code_availability/` directory** (every script sets
+Run everything **from this `soybean_co2_fertilization/` directory** (every script sets
 `folder = '.'` and reads `Data/` / writes `Results/`). Execute in pipeline order:
 
 ```bash
@@ -109,12 +108,4 @@ without re-running the heavy upstream model training.
 - **Maize trend transfer**: `ΔY = f(year) − f(1979)` from the corn `nn_time`
   model, 5-yr smoothed, median across seeds; used in place of soybean time terms.
 
-## Known TODO before public release
 
-- **Two soybean implementations** in `3-Soybean_CFE/`: the notebook (median trend
-  + fixed county set, matches the manuscript) and `2_model_clean_soy_per_seed.py`
-  (per-seed variant). Keep the one that produced the published numbers; mark or
-  remove the other. See `Code/3-Soybean_CFE/README.md`.
-- The county **shapefile** for the step-1 maps is not included — add it at
-  `Data/county_shp/` or document a download link (it affects figures only).
-- Fill in the paper/citation/data-provenance placeholders above.
