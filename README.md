@@ -9,7 +9,7 @@ coefficient captures the soybean-minus-maize CO₂ effect.
 
 - **Language** Python 3.12.13
 - **Packages** Standard Python packages: numpy, pandas, scipy, scikit-learn, tensorflow, matplotlib, geopandas (see requirements.txt).
-- **Data** County level soybean and corn annual yields, bi-monthly max and min temperature, precipitation and atmospheric CO₂ concentrations, May-October, 1979–2023
+- **Data** County level soybean and corn annual yields and harvest area, bi-monthly max and min temperature, precipitation and atmospheric CO₂ concentrations, May-October, 1979–2023
 - **Models**	Neural network + Ridge regression, 20 random seeds each
 - **Demo run time**	~10 min (single seed, standard laptop)
 - **Full pipeline**	Compute cluster recommended (20 seeds × 4 steps)
