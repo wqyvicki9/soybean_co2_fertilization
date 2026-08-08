@@ -35,8 +35,8 @@ Soybean_co2_fertilization/
 ├── Data/
 │   ├── Corn_CAMS_1979_2023_allcounties.csv
 │   ├── Soy_CAMS_1979_2023_allcounties.csv
-│   ├── 
-│   └── 
+│   ├── Corn_harvest_area_1979-2024_withFIPS.csv
+│   └── Soy_harvest_area_1979-2024_withFIPS.csv
 └── Results_sample/               ← pipeline outputs (per-seed dumps, trend, reliable counties)
 ```
 
