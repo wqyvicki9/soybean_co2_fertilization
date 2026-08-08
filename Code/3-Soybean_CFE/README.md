@@ -15,6 +15,4 @@ and all other files for analysis
 ---
 
 - `Step2_soybean_model.ipynb` — uses the **median** corn trend
-  (`diff_smooth_median`) + the **aggregated** 705-county set. **This matches the
-  manuscript.** Currently still a Colab notebook running only 2 seeds
-  (`random_seed_list = [1,2]`) — needs cleanup to 20 seeds + relative paths.
+  (`diff_smooth_median`) + the **aggregated** 705-county set. 
