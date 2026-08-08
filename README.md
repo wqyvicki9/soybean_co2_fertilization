@@ -33,14 +33,15 @@ Soybean_co2_fertilization/
 │   ├── 2-Corn_trend/        corn full model (Scenario 2) → maize background trend
 │   └── 3-Soybean_CFE/       soybean Scenario 2 → ΔCO₂-sensitivity
 ├── Data/
-│   └── Aggregated_yield_climate_co2/
-│       ├── Corn_CAMS_1979_2023_allcounties.csv
-│       └── Soy_CAMS_1979_2023_allcounties.csv
+│   ├── Corn_CAMS_1979_2023_allcounties.csv
+│   ├── Soy_CAMS_1979_2023_allcounties.csv
+│   ├── 
+│   └── 
 └── Results_sample/               ← pipeline outputs (per-seed dumps, trend, reliable counties)
 ```
 
 Each `Code/<step>/` folder has its own README stating that step's inputs and
-outputs. A full pipeline diagram is in [`Code/README.md`](Code/README.md).
+outputs. 
 
 ## Data
 
