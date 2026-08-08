@@ -2,7 +2,7 @@
 
 Code and processed data to reproduce the soybean **ΔCO₂-sensitivity** estimates:
 the soybean CO₂-fertilization response, isolated by transferring a maize-derived
-background (agronomy/technology) trend onto soybean so that the soybean CO₂
+background (agronomy) trend onto soybean so that the soybean CO₂
 coefficient captures the soybean-minus-maize CO₂ effect.
 
 
@@ -52,13 +52,13 @@ Two county-by-year panels (1979–2023), one per crop. Each row is a county-year
 | `FIPS` | 5-digit county code |
 | `Year` | calendar year (1979–2023) |
 | `Yield` | reported yield, bu/acre (USDA NASS) |
-| `ppt_May … ppt_Oct` | monthly precipitation |
-| `tmax_/tmin_/tmean_May … Oct` | monthly max/min/mean temperature |
+| `ppt_May … ppt_Oct` | monthly precipitation (PRISM) |
+| `tmax_/tmin_/tmean_May … Oct` | monthly max/min/mean temperature (PRISM) |
 | `co2_May … co2_Oct` | solar-radiation-weighted monthly CO₂ concentration (CAMS) |
 
 Monthly variables are averaged into three **bimonthly stages** inside the code:
 Early (May+Jun), Mid (Jul+Aug), Late (Sep+Oct). Counties with fewer than ~80% of
-years are dropped. Corn: 2,475 counties / 83,802 rows. Soy: 2,212 / 71,112.
+years are dropped. 
 
 
 
@@ -75,7 +75,7 @@ runs in a few GB of RAM).
 ## How to run
 
 Run everything **from this `soybean_co2_fertilization/` directory** (every script sets
-`folder = '.'` and reads `Data/` / writes `Results/`). Execute in pipeline order:
+`folder = '.'` and reads `Data/` / writes `Results/`). Results give samples only here (Results_sample). Execute in pipeline order:
 
 ```bash
 # 0 — climate-only (Scenario 1) models
