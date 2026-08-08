@@ -5,14 +5,15 @@ the soybean CO₂-fertilization response, isolated by transferring a maize-deriv
 background (agronomy) trend onto soybean so that the soybean CO₂
 coefficient captures the soybean-minus-maize CO₂ effect.
 
-## Quick Start
-**Requirements**
+## Quick Facts
 
-Python 3.12.13
-
-Standard Python packages: numpy, pandas, scipy, scikit-learn, tensorflow, matplotlib, geopandas (see requirements.txt).
-
-No special hardware required for single-seed runs; full 20-seed training is compute-heavy and designed for a SLURM cluster. A standard laptop can reproduce results using the pre-computed outputs in Results_sample/.
+- **Language** Python 3.12.13
+- **Packages** Standard Python packages: numpy, pandas, scipy, scikit-learn, tensorflow, matplotlib, geopandas (see requirements.txt).
+- **Data** County level soybean and corn annual yields, bi-monthly max and min temperature, precipitation and atmospheric CO₂ concentrations, May-October, 1979–2023
+- **Models**	Neural network + Ridge regression, 20 random seeds each
+- **Demo run time**	~10 min (single seed, standard laptop)
+- **Full pipeline**	Compute cluster recommended (20 seeds × 4 steps)
+- **License**	MIT
 
 
 ## Overview
@@ -77,7 +78,7 @@ years are dropped.
 pip install -r requirements.txt   # numpy, pandas, scipy, scikit-learn, tensorflow, matplotlib, geopandas
 ```
 
-Tested with Python 3.9. Training all 20 seeds is compute-heavy (designed for a
+Tested with Python 3.12.13. Training all 20 seeds is compute-heavy (designed for a
 SLURM cluster; each model script frees memory and writes per-seed files so it
 runs in a few GB of RAM).
 
