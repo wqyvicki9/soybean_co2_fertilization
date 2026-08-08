@@ -7,7 +7,7 @@ coefficient captures the soybean-minus-maize CO₂ effect.
 
 ## Quick Start
 **Requirements**
-```
+
 Python 3.12.13
 
 Standard Python packages: numpy, pandas, scipy, scikit-learn, tensorflow, matplotlib, geopandas (see requirements.txt).
