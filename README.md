@@ -24,7 +24,7 @@ the CO₂ coefficient there is the ΔCO₂-sensitivity. Every model is trained w
 ## Repository structure
 
 ```
-Code_availability/
+Soybean_co2_fertilization/
 ├── README.md              ← this file
 ├── requirements.txt
 ├── Code/                  ← pipeline (run folders 0 → 3 in order; see Code/README.md)
@@ -36,7 +36,7 @@ Code_availability/
 │   └── Aggregated_yield_climate_co2/
 │       ├── Corn_CAMS_1979_2023_allcounties.csv
 │       └── Soy_CAMS_1979_2023_allcounties.csv
-└── Results/               ← pipeline outputs (per-seed dumps, trend, reliable counties)
+└── Results_sample/               ← pipeline outputs (per-seed dumps, trend, reliable counties)
 ```
 
 Each `Code/<step>/` folder has its own README stating that step's inputs and
