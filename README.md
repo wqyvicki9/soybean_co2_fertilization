@@ -7,8 +7,10 @@ coefficient captures the soybean-minus-maize CO₂ effect.
 
 ## Quick Start
 **Requirements**
-Python 3.9
+Python 3.12.13
+
 Standard Python packages: numpy, pandas, scipy, scikit-learn, tensorflow, matplotlib, geopandas (see requirements.txt)
+
 No special hardware required for single-seed runs; full 20-seed training is compute-heavy and designed for a SLURM cluster. A standard laptop can reproduce results using the pre-computed outputs in Results_sample/.
 
 
