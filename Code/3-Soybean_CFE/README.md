@@ -13,18 +13,7 @@ proxy (`Tech_trend`); the coefficient on CO2 is the ΔCO2-sensitivity.
 
 ---
 
-## ⚠️ Two implementations here — pick the canonical one before release
-
 - `Step2_soybean_model.ipynb` — uses the **median** corn trend
   (`diff_smooth_median`) + the **aggregated** 705-county set. **This matches the
   manuscript.** Currently still a Colab notebook running only 2 seeds
   (`random_seed_list = [1,2]`) — needs cleanup to 20 seeds + relative paths.
-- `2_model_clean_soy_per_seed.py` — a **per-seed** variant: each seed uses its own
-  corn trend (`Corn_..._diff_smooth_rs{k}.p`) and its own per-seed reliable
-  counties. 20 seeds, clean `.py`. Does **not** consume the median trend / fixed
-  county set.
-
-The model core (NN architecture, CO2 perturbation `+1 ppm`, %-sensitivity) is
-identical between the two; they differ only in the trend/county inputs and seed
-count. **Confirm which folder produced the published numbers, then keep one and
-delete (or mark `supplementary_`) the other.**
