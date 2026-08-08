@@ -5,6 +5,12 @@ the soybean CO₂-fertilization response, isolated by transferring a maize-deriv
 background (agronomy) trend onto soybean so that the soybean CO₂
 coefficient captures the soybean-minus-maize CO₂ effect.
 
+## Quick Start
+**Requirements**
+Python 3.9
+Standard Python packages: numpy, pandas, scipy, scikit-learn, tensorflow, matplotlib, geopandas (see requirements.txt)
+No special hardware required for single-seed runs; full 20-seed training is compute-heavy and designed for a SLURM cluster. A standard laptop can reproduce results using the pre-computed outputs in Results_sample/.
+
 
 ## Overview
 
